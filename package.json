@@ -1,0 +1,30 @@
+{
+  "name": "ts-node",
+  "version": "1.0.0",
+  "main": "src/main.ts",
+  "author": "Nikita Povalishev",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "clear": "rm -rf ./build",
+    "ts:watch": "tsc --watch",
+    "js:watch": "nodemon ./build/main.js"
+  },
+  "nodemonConfig": {
+    "exec": "node --experimental-modules --es-module-specifier-resolution=node ./build/main.js"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "eslint": "^8.0.1",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.14",
+    "ts-node": "^10.3.0",
+    "typescript": "^4.3.5"
+  }
+}
