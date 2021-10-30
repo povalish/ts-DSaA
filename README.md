@@ -9,8 +9,8 @@ All classes and interfaces created for production-ready uses.
 
 ## Table of content
 
-- [Stack](#stack)
-- [Queue](#queue)
+- [Stack](#Stack)
+- [Queue](#Queue)
 
 
 ### Stack
@@ -23,14 +23,30 @@ take a plate from the top of the stack, and you can
 only add a plate to the top of the stack.
 
 ##### Properties
+
 - length
 
+
 ##### Methods
+
 - push(e) -- putting an element into a stack
 - pop() -- remove an element from a stack and returned removed element
 - top() -- just get last element
 - isEmpty() -- if Stack is empty
 - isFull() -- if Stack is full (when using fixed size)
+
+
+##### Complexity (array based)
+
+| Operation | Running Time  |
+| --------- | ------------- |
+| push(e)   | O(1)*         |
+| pop()     | O(1)*         |
+| top()     | O(1)          |
+| isEmpty() | O(1)          |
+| isFull()  | O(1)          |
+
+*amortized
 
 _______________________________
 
@@ -48,12 +64,29 @@ We usually say that elements enter a queue at the
 back and are removed from the front. A metaphor for
 this terminology is a line of people waiting to get ticket.
 
+
 ##### Properties
+
 - length
 
+
 ##### Methods
+
 - push(e) -- putting an element into a queue (at the end)
 - pop() -- removing element from a queue (from the start)
 - first() -- just get first element in a queue
 - isEmpty() -- if Queue is empty
 - isFull() -- if Queue is full
+
+
+##### Complexity (array based)
+
+| Operation | Running Time  |
+| --------- | ------------- |
+| push(e)   | O(1)*         |
+| pop()     | O(1)*         |
+| first()   | O(1)          |
+| isEmpty() | O(1)          |
+| isFull()  | O(1)          |
+
+*amortized
