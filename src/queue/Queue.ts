@@ -55,13 +55,11 @@ export class Queue<T> {
 
     // Need to resize
     // no needed for FIXED SIZE mode
-    if (!this.isFixedSize) {
-      const nonZeroSize = this.size > 0;
-      const lessThenDataLength = this.size < Math.round(this.data.length / 4);
-      if (nonZeroSize && lessThenDataLength) {
-        const newSize = Math.round(this.data.length / 2);
-        this.resizeDataCapacity(newSize);
-      }
+    const nonZeroSize = this.size > 0;
+    const lessThenDataLength = this.size < Math.round(this.data.length / 4);
+    if (!this.isFixedSize && nonZeroSize && lessThenDataLength) {
+      const newSize = Math.round(this.data.length / 2);
+      this.resizeDataCapacity(newSize);
     }
 
     return firstElement;
