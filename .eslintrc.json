@@ -26,6 +26,9 @@
     "no-multiple-empty-lines": ["warn", { "max": 3, "maxEOF": 0 }],
     "quote-props": "off",
     "quotes": "warn",
+    "no-useless-constructor": "off",
+    "no-empty-function": "off",
+    "no-console": "off",
 
     "@typescript-eslint/no-shadow": ["error"],
     "@typescript-eslint/no-use-before-define": ["error"],
