@@ -1,16 +1,13 @@
-/* eslint-disable no-console */
-import { LinkedList } from './linked-list/LinkedList';
+import { binary } from './algorithms/searching/binary';
 
-const list = new LinkedList<number>();
+console.log('-----------------------');
 
-list.insertAtStart(5);
-list.insertAtStart(4);
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const target = 1;
+const index = binary(array, target);
 
-list.insertAtEnd(6);
-list.insertAtEnd(7);
+console.log('Source array: ', array);
+console.log('Target: ', target);
+console.log('Taarget index:', index);
 
-list.insertAtStart(3);
-list.insertAtStart(2);
-list.insertAtStart(1);
-
-list.display();
+console.log('-----------------------');
