@@ -1,4 +1,3 @@
-
 /**
  * Binary search
  * Complexity: O(log(n))

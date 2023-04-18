@@ -1,3 +1,9 @@
+
+/**
+ * Linear search
+ * Complexity: O(n)
+ * Space complexity: 0(1)
+ */
 export const linearNative = (array: number[], target: number): number | null => {
   for (let i = 0; i < array.length; i++) {
     if (array[i] === target) {
@@ -8,6 +14,11 @@ export const linearNative = (array: number[], target: number): number | null => 
   return null;
 };
 
+/**
+ * Linear search
+ * Complexity: O(n)
+ * Space complexity: 0(1)
+ */
 export const linearJS = (array: number[], target: number): number | null => {
   const found = array.find((v) => v === target);
   return found || null;
