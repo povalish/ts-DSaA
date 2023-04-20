@@ -1,4 +1,4 @@
-import { main } from './leetcode/romanToInt';
+import { main } from './algorithms/searching/problems/rle';
 
 console.log('-----------------------');
 main();
