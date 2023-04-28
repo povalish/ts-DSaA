@@ -1,4 +1,5 @@
-import { main } from './algorithms/searching/problems/rle';
+import { main } from './leetcode/palindromeNumber';
+
 
 console.log('-----------------------');
 main();
