@@ -1,4 +1,4 @@
-import { main } from './leetcode/palindromeNumber';
+import { main } from './leetcode/removeDuplicates';
 
 
 console.log('-----------------------');
