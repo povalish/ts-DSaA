@@ -1,4 +1,4 @@
-import { main } from './leetcode/removeDuplicates';
+import { main } from './leetcode/plusOne';
 
 
 console.log('-----------------------');
