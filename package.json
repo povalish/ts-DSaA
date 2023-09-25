@@ -7,26 +7,25 @@
   "private": false,
   "type": "module",
   "scripts": {
-    "clear": "rm -rf ./build",
+    "clean": "rm -rf ./build",
     "start": "concurrently \"yarn ts:watch\" \"yarn js:watch\"",
     "ts:watch": "tsc --watch",
     "js:watch": "nodemon ./build/main.js"
   },
   "nodemonConfig": {
-    "exec": "node --experimental-modules --es-module-specifier-resolution=node ./build/main.js"
+    "exec": "node --es-module-specifier-resolution=node"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.1.0",
     "@typescript-eslint/parser": "^5.1.0",
     "concurrently": "^8.0.1",
     "eslint": "^8.0.1",
-    "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-jsx-a11y": "^6.4.1"
   },
   "dependencies": {
     "nodemon": "^2.0.14",
     "ts-node": "^10.3.0",
-    "typescript": "^4.3.5"
+    "typescript": "^5.2.2"
   }
 }

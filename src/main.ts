@@ -1,5 +1,4 @@
-import { main } from './algorithms/searching/binary-serach';
-// import { main } from './algorithms/sorting/merge-sort-2';
+import { main } from "./algorithms/searching/binary-search.js";
 
 
 
