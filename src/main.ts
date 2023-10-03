@@ -1,4 +1,4 @@
-import { main } from "./algorithms/searching/binary-search.js";
+import { main } from './leetcode/recursion/binarySearch.js';
 
 
 
