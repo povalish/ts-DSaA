@@ -1,4 +1,4 @@
-import { main } from './leetcode/recursion/binarySearch.js';
+import { main } from './algorithms/sorting/insertion-sort.js';
 
 
 
